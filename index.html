@@ -1,1 +1,143 @@
-<p>hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cottontown.co</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="content/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d8cfc4; /* taupe */
+            color: #2f4f4f; /* dark sage green */
+        }
+        .content img {
+            max-width: 20px;
+            height: auto;
+        }
+        .hero {
+            position: relative;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('content/hero.jpg'); /* Add gradient overlay */
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            padding-left: 20px; /* Adjust this value as needed */
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #d8cfc4; /* taupe */
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav img {
+            height: 40px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #2f4f4f; /* dark sage green */
+            font-weight: bold;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #about img {
+            max-width: 300px;
+            height: auto;
+        }
+        .about {
+            flex: 1;
+            padding: 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section {
+            padding-bottom: 80px; /* Further increase padding to add more space */
+            text-align: center; /* Center the content in the section */
+        }
+        footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="content/cottontownco_logo.png" alt="Cottontown Logo">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h1>COTTONTOWN.CO</h1>
+    </div>
+    </header>
+    <main>
+        <div class="content" id="about">
+            <img src="content/about.jpg" alt="About Image"> <!-- Replace with your image path -->
+            <div class="about">
+                <h2>About Us</h2>
+                <p>Welcome to Cottontown Co., where timeless design meets modern living. Inspired by our home on Cottontown Road, we blend mid-century modern aesthetics with a touch of farmhouse charm, creating spaces that are both cozy and contemporary.</p>
+                <p>At Cottontown Co., we're passionate about turning houses into homes through curated design projects and DIY creativity. Our journey began with a love for thoughtful, practical design, and now, we're excited to share that passion with you—whether it's through our home transformations, DIY projects, or unique interior design ideas.</p>
+                <p>Every project we undertake reflects our commitment to simplicity, elegance, and creating spaces that make you feel truly at home. Join us on this journey of crafting spaces that spark joy, comfort, and a little bit of magic in every corner.</p>
+            </div>
+        </div>
+        <hr style="border: 1px solid #2f4f4f; width: 80%; margin: 40px auto;">
+        <div>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <div class="content">
+                    <p>If you have any questions or would like to collaborate, feel free to reach out to us at</p>
+                    <p>Email: cottontownhome.co@gmail.com</p>
+                    <p>Follow us on social media for the latest updates and design inspiration!</p>
+                    <a href="https://www.instagram.com/cottontownco" target="_blank" style="display: inline-block;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37a4 4 0 1 1-4.63-4.63 4 4 0 0 1 4.63 4.63z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cottontown.co</p>
+    </footer>
+</body>
+</html>
